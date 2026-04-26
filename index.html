@@ -459,8 +459,8 @@ footer {
         non-Malliavin headline result.
       </div>
       <div class="paper-links">
-        <a href="https://doi.org/10.5281/zenodo.18624822" class="paper-link primary">Zenodo</a>
-
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6381579" class="paper-link primary">SSRN</a>
+        <a href="https://doi.org/10.5281/zenodo.18624822" class="paper-link">Zenodo</a>
         <a href="https://github.com/QuijoticResearch/operator-derivative-lean" class="paper-link">GitHub / Lean 4</a>
         <a href="https://quijoticresearch.github.io/operator-derivative-lean/blueprint/" class="paper-link">Blueprint</a>
       </div>
@@ -476,7 +476,8 @@ footer {
         stochastic integral representation.
       </div>
       <div class="paper-links">
-        <a href="https://doi.org/10.5281/zenodo.18625711" class="paper-link primary">Zenodo</a>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6381359" class="paper-link primary">SSRN</a>
+        <a href="https://doi.org/10.5281/zenodo.18625711" class="paper-link">Zenodo</a>
         <a href="https://github.com/QuijoticResearch/banach-levy-lean" class="paper-link">GitHub / Lean 4</a>
         <a href="https://quijoticresearch.github.io/banach-levy-lean/blueprint/" class="paper-link">Blueprint</a>
       </div>
@@ -500,18 +501,36 @@ footer {
 
     <div class="paper-card">
       <div class="paper-num">PAPER IV</div>
-      <div class="paper-title">Fractional Memory for Attention-Based Systems: Theory, Information Limits, and Implementation</div>
+      <div class="paper-title">Temporal Memory for Language Models</div>
       <div class="paper-desc">
-        Second application: AI memory. The fractional memory process provides
-        persistent state with power-law retention, O(N) query cost, and
-        provable information limits. The Leibniz defect becomes the memory
-        gap &mdash; the irreducible information loss from discontinuous updates.
+        First AI-facing application: temporal memory for frozen language
+        models. The model weights remain fixed; adaptation occurs through an
+        external memory state. The paper studies a normalize&ndash;route&ndash;rerank
+        architecture for persistent memory, comparing exponential, power-law,
+        finite-mixture, and fractional/Mittag-Leffler temporal selectors
+        across synthetic, MiniLM, matched-scale, contrastive TempLAMA-style,
+        and structured decoder tests.
       </div>
       <div class="paper-links">
-        <a href="#" class="paper-link primary">Zenodo (forthcoming)</a>
+        <a href="https://doi.org/10.5281/zenodo.19797971" class="paper-link primary">Zenodo</a>
+        <a href="https://github.com/QuijoticResearch/temporal-memory-for-language-models" class="paper-link">GitHub / experiments</a>
+        <a href="https://huggingface.co/spaces/QuijoticResearch/fractional-memory" class="paper-link">Interactive demo</a>
       </div>
     </div>
 
+  </div>
+
+  <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+    <div class="section-label" style="margin-bottom: 1rem;">AI Memory Architecture</div>
+    <div class="section-text">
+      The AI branch of the program studies persistent memory for frozen
+      models: how facts should be stored, retained, routed, and recalled
+      when the model weights do not change. A dedicated AI page is coming
+      soon.
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <a href="/ai" class="paper-link">AI area &mdash; coming soon</a>
+    </div>
   </div>
 </section>
 
@@ -592,6 +611,7 @@ footer {
       <p>
         <a href="https://github.com/QuijoticResearch" style="color: var(--accent); text-decoration: none;">GitHub</a><br>
         <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Fontes%2C%20Ramiro%22" style="color: var(--accent); text-decoration: none;">Zenodo</a><br>
+        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10088217" style="color: var(--accent); text-decoration: none;">SSRN</a><br>
         <a href="https://arxiv.org/search/?query=ramiro+fontes&searchtype=all&source=header" style="color: var(--accent); text-decoration: none;">arXiv</a><br>
         <a href="https://www.linkedin.com/in/ramirofontes/" style="color: var(--accent); text-decoration: none;">LinkedIn</a>
       </p>
