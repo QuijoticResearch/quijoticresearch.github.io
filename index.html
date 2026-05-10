@@ -441,10 +441,10 @@ footer {
   <div class="section-label">Research Papers</div>
   <div class="section-title">The Operator Derivative Program</div>
   <div class="section-text">
-    A unified framework in which the operator derivative D&nbsp;=&nbsp;&delta;* &mdash;
-    defined by duality with the stochastic integral &mdash; yields representation theorems,
-    Leibniz defects, and information-theoretic structure across stochastic calculus,
-    mathematical finance, and AI memory architecture.
+    A unified framework in which the operator derivative D&nbsp;=&nbsp;&delta;*,
+    defined by duality with the stochastic integral, separates representation from
+    calculus and exposes representability obstructions across Gaussian,
+    Banach/stable-L&eacute;vy, financial, and AI-facing applications.
   </div>
 
   <div class="papers-grid">
@@ -467,19 +467,37 @@ footer {
     </div>
 
     <div class="paper-card">
-      <div class="paper-num">PAPER II</div>
-      <div class="paper-title">Operator Factorization Beyond Hilbert Spaces: Representability Obstructions and Leibniz Defects for Stable L&eacute;vy Processes</div>
+      <div class="paper-num">PAPER II-A</div>
+      <div class="paper-title">The One-Parameter Banach Factorization for Stable L&eacute;vy Processes: Representability Obstructions and Leibniz Defects</div>
       <div class="paper-desc">
-        Extends the framework to Banach spaces and L&eacute;vy processes.
-        The Leibniz defect &Gamma;(F,G) appears as a structural invariant measuring
-        the non-Gaussian content &mdash; the part of the interaction that has no
-        stochastic integral representation.
+        Extends the operator-adjoint framework to stable L&eacute;vy integrals in
+        Banach spaces. The one-parameter integral &delta;<sub>L</sub>(u)&nbsp;=&nbsp;&int;&nbsp;u&nbsp;dL
+        only sees jump kernels of the form h(t,z)&nbsp;=&nbsp;u<sub>t</sub>z,
+        producing a representability obstruction for nonlinear jump-size
+        functionals. The Lean formalization verifies the abstract Banach-adjoint,
+        factorization, obstruction, and Leibniz-defect structure.
       </div>
       <div class="paper-links">
         <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6381579" class="paper-link primary">SSRN</a>
-        <a href="https://doi.org/10.5281/zenodo.18625711" class="paper-link">Zenodo</a>
         <a href="https://github.com/QuijoticResearch/banach-levy-lean" class="paper-link">GitHub / Lean 4</a>
         <a href="https://quijoticresearch.github.io/banach-levy-lean/blueprint/" class="paper-link">Blueprint</a>
+      </div>
+    </div>
+
+    <div class="paper-card">
+      <div class="paper-num">PAPER II-B</div>
+      <div class="paper-title">&nu;-Regular Representations and Singular Obstructions in Stable L&eacute;vy L<sup>p</sup> Calculus</div>
+      <div class="paper-desc">
+        Continues the stable L&eacute;vy analysis at the two-parameter
+        compensated-Poisson level. The paper separates &nu;-regular
+        compensated-Poisson integrands from &nu;-singular stable-integral terms,
+        showing why a single L<sup>p</sup>(&nu;)-regular representation space cannot
+        contain the stable identity integrand h(t,z)&nbsp;=&nbsp;z. The It&ocirc;
+        formula naturally splits into a singular stable-integral term, a regular
+        jump-defect martingale, and a compensator fluctuation.
+      </div>
+      <div class="paper-links">
+        <a href="https://doi.org/10.5281/zenodo.20112696" class="paper-link primary">Zenodo</a>
       </div>
     </div>
 
@@ -570,7 +588,7 @@ footer {
           operator-derivative-lean &mdash; Paper I
         </a>
         <a href="https://github.com/QuijoticResearch/banach-levy-lean" class="paper-link" style="width: fit-content;">
-          banach-levy-lean &mdash; Paper II
+          banach-levy-lean &mdash; Paper II-A
         </a>
         <a href="https://github.com/QuijoticResearch/volterra-levy" class="paper-link" style="width: fit-content;">
           volterra-levy &mdash; Paper III
@@ -597,9 +615,9 @@ footer {
   <div class="about-grid">
     <div class="about-item">
       <h3>Research</h3>
-      <p>Stochastic calculus, operator theory, fractional dynamics,
-         mathematical finance, AI memory architecture. Five papers,
-         three Lean formalizations, one provisional patent.</p>
+      <p>Research program spanning stochastic calculus, operator theory,
+         stable L&eacute;vy processes, mathematical finance, and AI memory,
+         with accompanying Lean formalizations and computational artifacts.</p>
     </div>
     <div class="about-item">
       <h3>Quijotic Research</h3>
